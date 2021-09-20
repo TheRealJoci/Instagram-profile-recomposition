@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <nav>
             <div className="header">
-                Vista
+                <h1>Vista</h1>
                 <UploadForm />
             </div>
         </nav>

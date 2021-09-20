@@ -9,8 +9,8 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      {/* <Gallery setSelectedImg={setSelectedImg} />
-      {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} /> } */}
+      <Gallery setSelectedImg={setSelectedImg} />
+      {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} /> }
     </div>
   )
 }
