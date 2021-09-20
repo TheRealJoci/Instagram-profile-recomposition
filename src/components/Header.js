@@ -1,10 +1,14 @@
 import React from 'react'
+import UploadForm from './UploadForm'
 
 const Header = () => {
     return (
-        <header>
-            <h1>Vista</h1>
-        </header>
+        <nav>
+            <div className="header">
+                Vista
+                <UploadForm />
+            </div>
+        </nav>
     )
 }
 
