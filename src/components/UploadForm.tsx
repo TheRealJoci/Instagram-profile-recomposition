@@ -9,10 +9,12 @@ const UploadForm = () => {
     const types = ['image/png', 'image/jpeg'];
 
     const changeHandler = (e: React.FormEvent<HTMLInputElement>) => {
-        const selected = e.currentTarget.files;
+        const selected = e.currentTarget.files ? e.currentTarget.files[0] : null;
 
-        if (selected && types.includes(selected[0].type)) {
-            setFile(selected[0]);
+        if (selected && types.includes(selected.type)) {
+            console.log(selected);
+            
+            setFile(selected);
             setError("");
         }
         else {
